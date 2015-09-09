@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+html, body {margin:0; padding:0;}
+body {  background: url(../img/back.jpg); background-repeat:repeat; position:relative; height:100vh; width:100%;overflow-x:hidden;}
+#black {height:100vh; width:100%;position:fixed; z-index:110; overflow:hidden;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.9+0,0.9+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-9 */
+}
+#pop_up { height:100vh; width:100%; position:fixed; z-index:110; bottom:0; background:#000;}
+#close { position:absolute; top:-10px; right:-10px;}
+
+@media (min-width: 410px) {
+	#pop_up p { padding:1% !important; text-align:center; color:#fff;}
+	#pop_up p #gplay{ width:20% !important;}
+	#pop_up h1 { font-size:17px !important; padding:10px 5px !important;}
+}
+@media (min-width: 260px) {
+	#pop_up p { padding:2%; text-align:center; color:#fff;}
+	#pop_up p #gplay{ width:40%;}
+	#pop_up h1 { font-family:title2, Arial, Helvetica, sans-serif; color:#fff; text-align:center; font-size:24px; padding:20px 5px;}
+}
+
+#mobile_img { position:absolute; width:100%; bottom:0; left:0; height:50%; padding:0 !important;}
+#app_img { height:100%;}
+.bird {position:absolute; top:-3vh; left:-13px; z-index:2; margin:0; padding:0;}
+
+#logo { padding-top:25px; text-align:center;}
+
+#listen { height:51px; width:270px; background:url(../img/listen.png); margin:0 auto; margin-top:30px; position:relative; z-index:8;}
+.listen_h {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:30px; padding:4px; float:left; margin-top:6px; margin-left:125px;}
+.icon4 { padding:4px 10px; cursor:pointer; height:30px; width:30px; position:absolute; left:73px; top:7px;}
+.equalizer { position:absolute; top:-47px; right:11px;
+transform: rotate(-1deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(-1deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(-1deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(-1deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(-1deg) scale(1) skew(1deg) translate(0px);}
+.hidden { z-index:10;}
+
+#container {background:url(../img/container.png); height:570px; width:270px; position:relative; margin:10px auto;}
+
+@font-face {
+    font-family: title;
+    src: url(PAKENHAM_SPRAYPAINT.TTF);
+}
+@font-face {
+    font-family: title2;
+    src: url(BLUE_HIGHWAY_LINOCUT.TTF);
+}
+
+
+#about { width:120px; position:absolute; top:15px; left:15px;}
+/*.icon1 { float:left; padding:4px;}*/
+.icon1_ { float:left; padding:5px 10px; margin-top:10px;}
+
+#about_text { width:120px;}
+.headings { font-family:title, Arial, Helvetica, sans-serif; color:#fff; font-size:17px;}
+.headings_inner { font-family:title, Arial, Helvetica, sans-serif; color:#ffc905; font-size:20px; padding:4px; text-align:center;}
+.headings2 { font-family:title, Arial, Helvetica, sans-serif; color:#fff; font-size:22px; padding:4px;}
+.rj_name { font-family:title, Arial, Helvetica, sans-serif; color:#fff; font-size:15px; padding:0px; text-align:center; text-transform:uppercase;}
+.paragraphs { font-size:12px; color:#fff;font-family: 'Merriweather', serif; padding:2px 4px; line-height:1.2; }
+.paragraphs_inner { font-size:12px; color:#fff;font-family: 'Merriweather', serif; padding:2px 4px; line-height:1.5; }
+.see-more {font-family:title, Arial, Helvetica, sans-serif; color:#fff; font-size:20px; padding:2px; float:right; z-index:10;}
+
+
+#about_rj { width:250px; height:250px; position:absolute; top:222px; left:15px;}
+#rj_text { width:250px; float:left;}
+#rj_right { float:right; width:100px;}
+#rj_left { float:left; width:150px;margin-top: 20px;}
+.rj { text-align:center;}
+.rj img{ height:70px; border:4px solid #f31e23;
+-webkit-box-shadow: -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         -2px 0px 5px 0px rgba(50, 50, 50, 0.75);}
+#performence { height:173px; width:110px; position:absolute; top:42px; left:145px; z-index:10;}
+#gallery_text { width:110px; float:left;}
+.perf { border:4px solid #fff; height:98px; width:100px;}
+#feedback { position:absolute; top:380px; left:15px; width:230px; height:250px;}
+#feedback_text { width:225px; float:left; margin-top:20px;}
+#feedback_text table { width:200px; margin-left:25px;}
+#feedback_text table td { padding:3px 5px; font-family: 'Merriweather', serif; color:#000; font-size:10px;}
+#feedback_text table tr:nth-child(odd) {
+    background: #f29995;
+}
+#feedback_text table tr:nth-child(even) {
+    background: #902b1f;
+}
+#feedback_text table td:nth-child(1) { color:#fff; border-right:1px solid #bd766f;}
+#feedback_img { float:right; padding-right:20px;}
+#icon2 { position:absolute; top:320px; left:90px;}
+#icon3 { position:absolute; top:320px; left:310px;}
+.icon3_ { position:absolute; bottom:0px; right:10px;}
+.icon2_ { position:absolute; bottom:0px; left:10px;}
+
+
+#request { height:320px; width:270px; background:url(../img/request.png); margin:10px auto; position:relative;}
+#req_text {font-family:title2, Arial, Helvetica, sans-serif; color:#ffc905; font-size:25px; padding:4px; text-align:center; padding-top: 20px !important;}
+#request input[type="text"] {color:#333; width:220px; border:1px solid #333; padding:4px;font-family: 'Merriweather', serif; background: #fff; font-size:12px; margin-left: 20px;}
+#request input[type="email"] {color:#333; width:220px; border:1px solid #333; padding:4px;font-family: 'Merriweather', serif; background: #fff; font-size:12px; margin-left: 20px;}
+#request input[type="tel"] {color:#333; width:220px; border:1px solid #333; padding:4px;font-family: 'Merriweather', serif; background: #fff; font-size:12px; margin-left: 20px;}
+#message {color:#333; max-width:220px; min-width:220px; border:1px solid #333; padding:4px;font-family: 'Merriweather', serif; background: #fff; font-size:12px; min-height:25px; max-height:25px; margin-left: 20px;}
+#request label {font-family: 'Merriweather', serif; font-size:12px; color:#fff; padding-left:20px;}
+#request p { text-align:center; margin:0; padding:0;}
+.submit { padding:4px 10px; font-family:title2, Arial, Helvetica, sans-serif; background:#ebebeb; color:#e5332a; font-size:14px; border:0px; cursor:pointer;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin-top: 8px;
+}
+@-moz-document url-prefix() { 
+  .submit { padding:4px 10px; font-family:title2, Arial, Helvetica, sans-serif; background:#ebebeb; color:#e5332a; font-size:14px; border:0px; cursor:pointer;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+margin-top: 18px;}
+}
+.submit:hover {background:#ffc905; cursor:pointer;}
+#facebook {position:absolute; top:28px; left:12px;}
+#twitter {position:absolute; top:80px; left:12px;}
+#youtube {position:absolute; top:130px; left:12px;}
+
+.home {position:absolute; top:33px; right:496px; cursor:pointer; z-index:7; margin:0; padding:0;}
+.about {position:absolute; top:26px; right:450px; cursor:pointer; z-index:6; margin:0; padding:0;}
+.schedule {position:absolute; top:-28px; right:410px; cursor:pointer; z-index:5; margin:0; padding:0;}
+.rj_pro {position:absolute; top:-30px; right:368px; cursor:pointer; z-index:4; margin:0; padding:0;}
+.archive {position:absolute; top:0px; right:327px; cursor:pointer; z-index:3; margin:0; padding:0;}
+.gallery {position:absolute; top:1px; right:283px; cursor:pointer; z-index:2; margin:0; padding:0;}
+.contact {position:absolute; top:-18px; right:240px; cursor:pointer; z-index:1; margin:0; padding:0;}
+
+.home2 {position:absolute; top:34px; right:496px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.about2 {position:absolute; top:26px; right:450px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.schedule2 {position:absolute; top:-28px; right:410px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.rj_pro2 {position:absolute; top:-30px; right:368px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.archive2 {position:absolute; top:0px; right:327px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.gallery2 {position:absolute; top:1px; right:283px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.contact2 {position:absolute; top:-18px; right:240px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+
+.home3 {position:absolute; top:34px; right:496px; cursor:pointer; z-index:8; margin:0; padding:0;}
+.about3 {position:absolute; top:26px; right:450px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.schedule3 {position:absolute; top:-28px; right:410px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.rj_pro3 {position:absolute; top:-30px; right:368px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.archive3 {position:absolute; top:0px; right:327px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.gallery3 {position:absolute; top:1px; right:283px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+.contact3 {position:absolute; top:-18px; right:240px; cursor:pointer; display:none; z-index:8; margin:0; padding:0;}
+
+#copyright {font-family: 'Merriweather', serif; font-size:12px; color:#000; text-align:right; float:right; margin-bottom:10px; margin-right:10px; font-weight:bold;}
+#headphone { position:absolute; top:50px; left:15px; z-index:10; display:none;}
+.home_div {}
+#about_div { width:236px; height:510px; position:absolute; top:20px; left:15px; display:none;}
+#schedule_div { width:236px; height:510px; position:absolute; top:20px; left:15px; display:none; }
+#rj_pro_div {width:236px; height:500px; position:absolute; top:40px; left:15px; display:none; overflow:auto; z-index:20;}
+#gallery_div { width:236px; height:500px; position:absolute; top:40px; left:15px; display:none; overflow:auto; z-index:20;}
+#contact_div {width:236px; height:510px; position:absolute; top:20px; left:15px; display:none;}
+#about_div .paragraphs_inner {font-size:12px;}
+#contact_div .headings_inner {font-size:25px;}
+#contact_div .paragraphs {font-size:14px;}
+.owl-pagination { display:none;}
+/*.customNavigation { margin-top:5vh;*/}
+.item ul { margin:0; padding:0;}
+.item ul li { list-style-type:none; float:left;}
+.item ul li h4 { padding:2px 4px; color:#FFC905;border-bottom:2px solid #fff;font-family: 'Merriweather', serif;font-size:12px;}
+.item ul li p { font-size:10px;font-family: 'Merriweather', serif; padding:2px; text-align:center;}
+
+#home_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:25px; padding:4px;position:absolute; top:73px; right:496px;z-index:8;
+transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);}
+
+#about_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:25px; padding:4px;position:absolute; top:63px; right:437px;z-index:8;
+transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(256deg) scale(1) skew(1deg) translate(0px);}
+
+#schedule_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:19px; padding:4px;position:absolute; top:36px; right:372px;z-index:8;
+transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);}
+
+#rj_pro2_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:20px; padding:4px;position:absolute; top:52px; right:361px;z-index:8;
+transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);}
+
+#archive_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:25px; padding:4px;position:absolute; top:46px; right:315px;z-index:8;
+transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);}
+
+#gallery_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:25px; padding:4px;position:absolute; top:37px; right:277px;z-index:8;
+transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);}
+
+#contact_nav_t {font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:20px; padding:4px;position:absolute; top:26px; right:227px;z-index:8;
+transform: rotate(277deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(277deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(277deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(277deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(277deg) scale(1) skew(1deg) translate(0px);}
+canvas { -ms-touch-action: none; }
+#c2canvasdiv { height:200px; width:296px; position:absolute;}
+.address { text-align:center;} 
+#gallery_ul { margin:5px; padding:0;}
+#gallery_ul li { float:left; padding:5px;}
+#gallery_ul li img { width:88px; height:63px; border:2px solid #fff;}
+.active_nav { color:#fff;}
+
+#rj_ul { margin:5px; padding:0;}
+#rj_ul li { float:left; padding:5px;}
+#rj_ul li img { height:120px; border:2px solid #fff;}
+#rj_ul li .rj_name { font-size:14px;}
+.active_nav { color:#fff;}
+#rj_des_div { width:230px; margin:0 auto;}
+#rj_img { float:left; width:230px;}
+#rj_des { float:left; width:230px;}
+mark { font-weight:bold;}
+#rj_body { overflow:auto;background: #e7332c none repeat scroll 0 0;}
+#rj_des .rj_name { color:#ffc905; font-size:20px; font-family:title, Arial, Helvetica, sans-serif;}
+#rj_des p { font-size:14px;font-family: 'Merriweather', serif; line-height:1.5;}
+#rj_body .rj img { height:130px !important;}
+
+.sideBarNav{position: absolute; top:10px; left:-34px; height:25px; cursor: pointer;}
+.sideBar{width:200px; position: fixed; height: 100%; right:-200px; top:0px; z-index: 99;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+.sideBar ul {margin: 0; padding: 0;}
+.sideBar ul li {color:#333; text-transform: uppercase; font-size:14px; text-decoration:none; }
+#full_body_sideBarHover{position:fixed; height:100%; width: 100%; z-index: 2; background:rgba(0, 0, 0, 0.25); display: none;}
+.nav_li { padding: 10px;}
+.active_li {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+52,6d0019+100&amp;0.9+0,0.9+100;Brown+Red+3D */
+background: -moz-linear-gradient(top,  rgba(169,3,41,0.9) 0%, rgba(143,2,34,0.9) 52%, rgba(109,0,25,0.9) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(169,3,41,0.9)), color-stop(52%,rgba(143,2,34,0.9)), color-stop(100%,rgba(109,0,25,0.9))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(169,3,41,0.9) 0%,rgba(143,2,34,0.9) 52%,rgba(109,0,25,0.9) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(169,3,41,0.9) 0%,rgba(143,2,34,0.9) 52%,rgba(109,0,25,0.9) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(169,3,41,0.9) 0%,rgba(143,2,34,0.9) 52%,rgba(109,0,25,0.9) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(169,3,41,0.9) 0%,rgba(143,2,34,0.9) 52%,rgba(109,0,25,0.9) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6a90329', endColorstr='#e66d0019',GradientType=0 ); /* IE6-9 */
+}
+.active_li  { color:#fff !important;}
+
+#socila_div { height:195px; width:59px; position:fixed; bottom:5%; right:-20px; z-index:8;}
+#icon5 { display:none; z-index:9;}
+.owl-item { height:490px;}
+.cross { display:none;}
+
+#download { position:fixed; top:40vh; width:148px; left:-100px; z-index:10;}
+.down_icon { padding:5px; width:90px; margin:2px 0;}
+#our_apps { width:32px; height:106px; float:left;margin-top: 35px; cursor:pointer; background:url(../img/our_apps.png);}
+#our_apps p{font-family:title2, Arial, Helvetica, sans-serif; color:#fff; font-size:19px; padding:4px;position:absolute; bottom:70px; right:2px;z-index:8;
+transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(270deg) scale(1) skew(1deg) translate(0px);}
+#apps_links {float:left; background:#b72c26;width: 100px;}
+
